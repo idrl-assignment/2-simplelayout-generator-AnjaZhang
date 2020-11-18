@@ -6,8 +6,6 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import scipy.io as sio
 
-# import numpy as np
-
 
 def save_matrix(matrix, file_name):
     # TODO: 存储 matrix 到 file_name.mat, mdict 的 key 为 "matrix"
@@ -28,9 +26,3 @@ def make_dir(outdir):
     p = Path(outdir)
     p.mkdir(exist_ok=True, parents=True)
     return None
-
-
-# mat = np.random.rand(10, 10)
-# save_matrix(mat, 'mat')
-# save_fig(mat, 'mat')
-# make_dir('dir1/dir2')
