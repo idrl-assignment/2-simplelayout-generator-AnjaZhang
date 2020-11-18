@@ -2,6 +2,5 @@ pytest
 numpy
 matplotlib
 scipy
-math # ???
 pathlib
 # TODO: add additional package

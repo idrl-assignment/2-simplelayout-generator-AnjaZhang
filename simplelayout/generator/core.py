@@ -5,7 +5,6 @@
 
 import numpy as np
 import math
-import matplotlib.pyplot as plt
 
 
 def generate_matrix(
@@ -32,7 +31,7 @@ def generate_matrix(
         pos_r = math.floor((pos - 1) / unit_n_total)
         pos_c = (pos - 1) % unit_n_total
         layout_mtx[
-            int(pos_r * unit_n_total) : int((pos_r + 1) * unit_n_total),
-            int(pos_c * unit_n_total) : int((pos_c + 1) * unit_n_total),
+            int(pos_r * unit_n_total):int((pos_r + 1) * unit_n_total),
+            int(pos_c * unit_n_total):int((pos_c + 1) * unit_n_total),
         ] = 1
     return layout_mtx  # TODO: 实现布局矩阵的生成
